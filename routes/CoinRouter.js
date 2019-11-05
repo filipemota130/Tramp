@@ -1,6 +1,6 @@
 const express = require('express');
 const CoinRouter = express.Router();
-const admin = require('firebase-admin');
+let user = require ("../models/User.js")
 
 CoinRouter.route('/').get(function (req, res) {
   res.render('index');
@@ -26,20 +26,10 @@ CoinRouter.route('/servicos').get(function (req, res) {
     res.render('servicos');
 });
 
-const Coin = require('../models/Coin.model');
+const Coin = require('../models/Coin.model');;
 
-const Usuario = require('../models/Usuario.model');
-
-CoinRouter.route('/post').post(function (req, res) {
+CoinRouter.route('post').post(function (req, res) {
    const usuario = new Usuario(req.body);
-   firebase.auth().createUserWithEmailAndPassword(usuario.email, usuario.senha).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    console.log(errorCode);
-    var errorMessage = error.message;
-    console.log(errorMessage)
-    // ...
-  });
    console.log(usuario);
    res.redirect("/login")
 
