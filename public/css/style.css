@@ -1,0 +1,286 @@
+h1 {
+    color: black;
+    text-align: left;
+}
+
+h2 {
+    color: black;
+    text-align: right;
+}
+
+.footer {
+    background-color: black;
+}
+
+.masthead {
+    min-height: 500px;
+    background-image: url('../images/work.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+
+.texto {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.fundo_login {
+    background: #034078;
+    background: linear-gradient(to right, #034078, rgb(18, 130, 162));
+}
+
+.map-container-5 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-5 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+section.pricing {
+    background-color: #034078;
+    background-color: linear-gradient(to right, #034078, #1282a2);
+}
+
+.pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+    margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.pricing .card-price {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.pricing .card-price .period {
+    font-size: 0.8rem;
+}
+
+.pricing ul li {
+    margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+    opacity: 0.7;
+}
+
+.pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.topInicial {
+    width: 100%;
+    height: 450px;
+    background: url(../images/fundo-4.png) no-repeat;
+    background-size: 100%;
+}
+
+.card2 {
+    width: 14rem;
+}
+
+.btnNav1 {
+    position: absolute;
+    left: 70%;
+}
+
+.btnNav2 {
+    position: absolute;
+    left: 90%;
+}
+
+@media(max-width: 1205px) {
+    .topInicial {
+        width: 100%;
+        height: 450px;
+        background: url(../images/TESTE-1.svg) no-repeat;
+        background-size: 100%;
+    }
+    .wrap {
+        width: 70%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media(max-width: 990px) {
+    .btnNav1 {
+        position: relative;
+        left: 0%;
+        margin-bottom: 8px;
+    }
+    .btnNav2 {
+        position: relative;
+        left: 0%;
+    }
+}
+
+@media(max-width: 700px) {
+    .topInicial {
+        width: 100%;
+        height: 450px;
+        background: url(../images/fundo-3.png) no-repeat;
+        background-size: 120%;
+    }
+    .wrap {
+        width: 95%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .card2 {
+        width: 50rem;
+    }
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+
+.wrap {
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img_top1 {
+    position: absolute;
+    left: 0%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+.map-container-6 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container-6 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-color: rgb(253, 253, 253);
+    border-radius: 15px;
+    outline-color: #034078;
+    outline-offset: 15px;
+    align-content: center;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #034078;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: black;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #034078;
+    background: #034078;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.img1 {
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 28%;
+}
+
+.search2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.wrap2 {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}

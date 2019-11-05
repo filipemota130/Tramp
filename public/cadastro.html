@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/css/creative.min.css" rel="stylesheet">
+    <script type="text/javascript" src="IServices.js"></script>
+    <script src="https://kit.fontawesome.com/10a7600da8.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>TrampMe - Cadastro</title>
+</head>
+
+<body class="fundo_login">
+    <div class="container">
+
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-cadastro-image"></div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Bem vindo!</h1>
+                                        <p style="text-align: center;margin-right: 0%">Cadastre-se para ter acesso à pedidos de serviços de diversos profissionais da plataforma</p>
+                                    </div>
+                                    <form class="user" method="POST" action="/TrampMe/POST">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="senha" class="form-control form-control-user" id="exampleInputPassword" placeholder="senha">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCity">Cidade</label>
+                                            <input type="text" class="form-control" name="cidade" id="inputCity">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputState">Estado</label>
+                                            <select id="inputState" name="estado" class="form-control">
+                                                        <option selected>Selecione</option>
+                                                        <option>...</option>
+                                                    </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputZip">Sexo</label>
+                                            <select id="inputState" name="sexo" class="form-control">
+                                                                <option selected>Masculino</option>
+                                                                <option>Feminino</option>
+                                                                <option>Outro</option>
+                                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="checbox" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                                    concordo e aceito os termos de uso
+                                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">Cadastrar</button>
+                                        <hr>
+                                        <a href="../index.html" class="btn btn-google btn-user btn-block">
+                                            <i class="fab fa-google fa-fw"></i> Entrar com Google
+                                        </a>
+                                        <a href="../index.html" class="btn btn-facebook btn-user btn-block">
+                                            <i class="fab fa-facebook-f fa-fw"></i> Entrar com Facebook
+                                        </a>
+                                    </form>
+                                    <hr>
+                                    <div class="text-center">
+                                        <a class="small" href="Cadastro.1.html">Desejo cadastrar um perfil profissional</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small" href="login.html">Já possuo uma conta</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small" href="../index.html">Voltar à página inicial</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <footer class="page-footer font-small indigo" style="background-color: #011E2E;">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #ffffff">TrampMe
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Quem somos?</a>
+                        </li>
+                        <li>
+                            <a href="#!">Fale conosco</a>
+                        </li>
+                        <li>
+                            <a href="#!">Vem pro TrampMe</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-3 mx-auto">
+                    <!-- Links 2-->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #ffffff">Como participar?
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Quais as vantagens do TrampMe?</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-3 mx-auto">
+                    <!-- Links dos icons -->
+                    <!-- isso aqui não está funcionando. Os ícones não aparecem-->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: #ffffff">Social
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="fb-ic" style="color: #ffffff">
+                                <i class="fab fa-facebook-square fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="ins-ic" style="color: #ffffff">
+                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="tw-ic" style="color: #ffffff">
+                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                        </li>
+                        <!-- Acaba aqui o problema-->
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+            </div>
+        </div>
+        <!-- Footer Links -->
+        <div class="footer-copyright text-center py-3" style="color: #ffffff">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> TrampMe.com</a>
+        </div>
+    </footer>
+
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/javascript/creative.min.js"></script>
+
+    <!-- JavaScript da pagina-->
+    <script src="/javascript/IServices.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="javascript/creative.js"></script>
+</body>
+
+</html>
