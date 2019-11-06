@@ -13,6 +13,6 @@ const User = new Schema({
     collection: 'Cliente'
 });
 
-const User = mongoose.model("User", User);
+const usuario = mongoose.model("User", User);
 
-module.exports = User;
+module.exports = usuario;
