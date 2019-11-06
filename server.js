@@ -1,6 +1,5 @@
 // server.js
-var http = require("http");
-const MongoClient = require ('mongodb').MongoClient
+const MongoClient = require ('mongodb').MongoClient;
 
 const uri = "mongodb+srv://admin:admin123@cluster-trampme-dqevg.gcp.mongodb.net/test?retryWrites=true&w=majority";
 

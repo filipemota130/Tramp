@@ -1,6 +1,6 @@
 const express = require('express');
 const CoinRouter = express.Router();
-let user = require ("../models/User.js")
+const user = require('../models/User');
 
 CoinRouter.route('/').get(function (req, res) {
   res.render('index');
@@ -26,10 +26,8 @@ CoinRouter.route('/servicos').get(function (req, res) {
     res.render('servicos');
 });
 
-const Coin = require('../models/Coin.model');;
-
-CoinRouter.route('post').post(function (req, res) {
-   const usuario = new Usuario(req.body);
+CoinRouter.route('/post').post(function (req, res) {
+   const usuario = new user(req.body);
    console.log(usuario);
    res.redirect("/login")
 
