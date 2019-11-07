@@ -6,10 +6,11 @@ const User = new Schema({
     type: String,
     required: [true,"email necessário"]
   },
-  senha: {
+  senha:{
      type: String
   }
-},{
+},
+{
     collection: 'Cliente'
 });
 
